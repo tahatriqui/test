@@ -52,13 +52,12 @@ btnCheck.addEventListener('click', () => {
 })
 
 btnCheeck.addEventListener('click', () => {
-    for (let i=3 ;i<input.length;i++){
-        if( )
-        let value = .value.trim();
+     
+        let value = input[3].value.trim();
 
     r.innertext = value.length === 0 ? alert('entrez un nom') : "";
 
-    }
+   
     
 
 })
@@ -66,5 +65,10 @@ btnCheeck.addEventListener('click', () => {
 btnCheeck.addEventListener('click', () => {
     let value = input[4].value.trim();
 
-    r.innertext = value.length === 0 ? alert('entrez un prenom') : "";
+    r.innertext = value.length === 0 ? alert('entrez un email') : "";
+})
+btnCheeck.addEventListener('click', () => {
+    let value = input[5].value.trim();
+
+    r.innertext = value.length === 0 ? alert('entrez un password') : "";
 })
