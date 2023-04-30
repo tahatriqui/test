@@ -70,5 +70,5 @@ btnCheeck.addEventListener('click', () => {
 btnCheeck.addEventListener('click', () => {
     let value = input[5].value.trim();
 
-    r.innertext = value.length === 0 ? alert('entrez un password') : "";
+    r.innertext = value.length === 0 ? alert('entrez un password') :  alert("Enregistrement succes");
 })
