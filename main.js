@@ -8,7 +8,15 @@ const BtnPopUp = document.querySelector(".btnlogin-popup");
 
 const iconClose = document.querySelector(".button-close");
 
-const input = document.querySelectorAll("input");
+const email = document.getElementById("email");
+
+const password = document.getElementById("password");
+
+const nom = document.getElementById("nom");
+
+const mail = document.getElementById("mail");
+
+const pwd = document.getElementById("pswd");
 
 const btnCheck = document.querySelector(".btn");
 
@@ -37,38 +45,28 @@ iconClose.addEventListener('click', () => {
     wrapper.classList.remove('active-popup');
 });
 
-btnCheck.addEventListener('click', () => {
-    let value = input[0].value.trim();
-
-    result.innertext = value.length === 0 ? alert('entrez un email') : "";
-
-})
 
 btnCheck.addEventListener('click', () => {
-    let value = input[1].value.trim();
 
-    result.innertext = value.length === 0 ? alert('entrez un password') : alert("login succes");
+    if (email.value === "") { alert('entrez un email'); }
+    else if (password.value === "") {
 
-})
-
-btnCheeck.addEventListener('click', () => {
-     
-        let value = input[3].value.trim();
-
-    r.innertext = value.length === 0 ? alert('entrez un nom') : "";
-
-   
-    
+        alert('entrez un password')
+    } else { alert("login succes") };
 
 })
 
 btnCheeck.addEventListener('click', () => {
-    let value = input[4].value.trim();
 
-    r.innertext = value.length === 0 ? alert('entrez un email') : "";
-})
-btnCheeck.addEventListener('click', () => {
-    let value = input[5].value.trim();
+    if (nom.value == "") { 
+        alert('entrez un nom');
 
-    r.innertext = value.length === 0 ? alert('entrez un password') :  alert("Enregistrement succes");
+    }else if(mail.value==""){
+    alert('entrez un email');
+
+    }else if (pwd.value === ""){
+        alert('entrez un password');
+
+        }else{alert("Enregistrement succes");
+    }
 })
