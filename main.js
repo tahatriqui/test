@@ -52,7 +52,9 @@ btnCheck.addEventListener('click', () => {
     else if (password.value === "") {
 
         alert('entrez un password')
-    } else { alert("login succes") };
+    } else { alert("login succes") ;
+           window.location.assign('https://www.ofppt.ma/');
+           };
 
 })
 
@@ -68,5 +70,6 @@ btnCheeck.addEventListener('click', () => {
         alert('entrez un password');
 
         }else{alert("Enregistrement succes");
+              window.location.assign('https://www.ofppt.ma/');
     }
 })
